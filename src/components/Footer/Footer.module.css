@@ -1,0 +1,15 @@
+.footer{
+  margin-top: 100px;
+  padding-top: 50px;
+  background-color: rgb(55, 71, 79);
+  height: 250px;
+  width: 100%;
+}
+
+.title{
+  padding-top: 20px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+
+}
