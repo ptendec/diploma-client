@@ -8,6 +8,9 @@ import {Button, CardActions, CardContent, Paper, TextField, Typography} from "@m
 import {Link, Navigate, useNavigate} from "react-router-dom"
 import SendIcon from '@mui/icons-material/Send';
 import {useSelector} from "react-redux"
+import image1 from '../../assets/images/photo_2022-04-24_23-34-33.jpg'
+import image2 from '../../assets/images/photo_2022-04-24_23-34-42.jpg'
+import image3 from '../../assets/images/photo_2022-04-24_23-34-33 (2).jpg'
 
 
 const Main = () => {
@@ -81,7 +84,6 @@ const Main = () => {
       <section className={classes.vacancies}>
         <Container>
           <Paper elevation={3} style={{padding: '40px 0'}}>
-
             <Grid spacing={2} container justifyContent={'center'}>
               <Grid item xl={5} lg={5}>
                 <Paper elevation={3}>
@@ -168,7 +170,30 @@ const Main = () => {
                   }}
                 ><Link to={'/jobSeeker/vacancies'}>Больше</Link></Button>
               </Grid>
+            </Grid>
+          </Paper>
+        </Container>
+      </section>
+      <section className={classes.clients}>
+          <Container >
+          <Paper elevation={3} style={{padding: '40px 20px'}}>
+            <Typography sx={{fontSize: 18}} color="text.secondary" style={{marginBottom: '20px'}}>
+              Наши клиенты
+            </Typography>
+            <Grid container spacing={3}>
 
+              <Grid item xl={4} lg={4} md={12} sm={12} xs={12}>
+                <img src={image1} style={{width: '100%'}} alt=""/>
+                <p>Татьяна Смирнова</p>
+              </Grid>
+              <Grid item xl={4} lg={4} md={12} sm={12} xs={12}>
+                <img src={image2} style={{width: '100%'}} alt=""/>
+                <p>Елена Кужукеева</p>
+              </Grid>
+              <Grid item xl={4} lg={4} md={12} sm={12} xs={12}>
+                <img src={image3} style={{width: '100%'}} alt=""/>
+                <p>Ирина Верещук</p>
+              </Grid>
             </Grid>
           </Paper>
         </Container>
