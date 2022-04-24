@@ -17,7 +17,7 @@ const CreateProfile = () => {
   const [goals, setGoals] = useState('')
   const [frustration, setFrustration] = useState('')
   const [file, setFile] = useState('')
-  const [introvert, setIntrovert] = useState()
+  const [introvert, setIntrovert] = useState(2)
   const [analytical, setAnalytical] = useState(2)
   const [busy, setBusy] = useState(2)
   const [messy, setMessy] = useState(2)
@@ -100,7 +100,6 @@ const CreateProfile = () => {
                 variant="outlined"/>
               <Typography gutterBottom>Introvert - Extrovert</Typography>
               <Slider
-                key={1}
                 defaultValue={2}
                 value={introvert}
                 onChange={(event, value) => {
