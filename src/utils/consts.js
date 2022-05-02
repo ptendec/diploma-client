@@ -11,3 +11,5 @@ export const PROFILE = '/profile'
 export const API_URL = 'https://diploma-pern.herokuapp.com/api'
 export const FILE_URL = 'https://diploma-pern.herokuapp.com/'
 
+/*export const API_URL = 'http://localhost:5000/api'
+export const FILE_URL = 'http://localhost:5000/'*/
