@@ -5,7 +5,7 @@ import {useDispatch, useSelector} from "react-redux"
 import {setProfile} from "../../store/jobSeekerProfile/reducer"
 import JobSeekerProfileShow from "../../components/JobSeekerProfile/JobSeekerProfileShow"
 import CreateCv from "../../components/CreateCV/CreateCV"
-import {setCv} from "../../store/cv/reducer"
+import {removeCv, setCv} from "../../store/cv/reducer"
 import ShowCV from "../../components/ShowCV/ShowCV"
 
 const CV = () => {
@@ -22,6 +22,9 @@ const CV = () => {
       console.log(response)
       if (response.status === 200) {
         dispatch(setCv(data.cv))
+      }
+      else {
+        dispatch(removeCv({}))
       }
     })
   }, [])
