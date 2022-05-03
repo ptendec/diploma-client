@@ -49,7 +49,7 @@ const CompanyAuthorization = () => {
   return (
     <>
       <div className={classes.companyAuthorization}>
-        <Snackbar open={isCredentialsIncorrect} autoHideDuration={3000} onClose={handleClose}>
+        <Snackbar open={isCredentialsIncorrect} autoHideDuration={3000} onClose={handleClose}  anchorOrigin={ {vertical: 'top', horizontal: 'center'} }>
           <Alert severity="error">{errorMessage}</Alert>
         </Snackbar>
         <Container maxWidth={"lg"}>

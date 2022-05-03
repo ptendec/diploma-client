@@ -3,6 +3,8 @@ import {useDispatch, useSelector} from "react-redux"
 import {removeCompany} from "../../store/company/reducer"
 import {Navigate} from "react-router-dom"
 import {removeJobSeeker} from "../../store/jobSeeker/reducer"
+import {removeCv} from "../../store/cv/reducer"
+import {removeProfile} from "../../store/jobSeekerProfile/reducer"
 
 const Quit = () => {
   const dispatch = useDispatch()
@@ -15,6 +17,8 @@ const Quit = () => {
   }
   else if(isJobSeekerAuthenticated) {
     dispatch(removeJobSeeker())
+    dispatch(removeCv())
+    dispatch(removeProfile())
   }
   return (
     <Navigate to={'/'} />
